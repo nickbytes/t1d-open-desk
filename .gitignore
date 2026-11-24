@@ -1,0 +1,11 @@
+bundle/
+public/
+.dev.vars*
+.env*
+wrangler.invite.jsonc
+.wrangler/
+node_modules/
+
+.cloudflare/
+research/
+.DS_Store

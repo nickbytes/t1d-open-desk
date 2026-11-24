@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "t1d-open-desk",
+  "main": "bundle/index.mjs",
+  "compatibility_date": "2026-11-24",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": { "OPEN_DESK_MODE": "invite" },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "t1d-open-desk",
+    "database_id": "REPLACE_WITH_VERIFIED_FREE_D1_ID",
+    "migrations_dir": "drizzle"
+  }]
+}

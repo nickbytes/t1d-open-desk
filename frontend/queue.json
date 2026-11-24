@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "T1D-01",
+      "status": "open",
+      "title": "Delay is not prevention",
+      "question": "Audit the stage 2 onset-delay evidence. What ages were in the randomized trial, and which evidence does the FDA label cite for younger children? Separate delay from permanent prevention.",
+      "sources": [
+        {
+          "label": "TN-10 trial paper",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31180194/"
+        },
+        {
+          "label": "FDA prescribing information",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761183s010lbls014lbl.pdf"
+        }
+      ]
+    },
+    {
+      "id": "T1D-02",
+      "status": "open",
+      "title": "What changed after diagnosis?",
+      "question": "Compare C-peptide with the clinical outcomes in PROTECT. Record the age range, all prespecified key secondary results, and what the confirmatory trial intends to answer.",
+      "sources": [
+        {
+          "label": "PROTECT trial paper",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37861217/"
+        },
+        {
+          "label": "PROTECT trial registry",
+          "url": "https://clinicaltrials.gov/study/NCT03875729"
+        },
+        {
+          "label": "FDA approval announcement",
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3"
+        },
+        {
+          "label": "Confirmatory trial registry",
+          "url": "https://clinicaltrials.gov/study/NCT07088068"
+        }
+      ]
+    },
+    {
+      "id": "T1D-03",
+      "status": "open",
+      "title": "How durable is insulin independence?",
+      "question": "Audit adult-only replacement evidence: denominator, follow-up, use of immunosuppression, and safety reporting. Do not infer benefit or safety for children.",
+      "sources": [
+        {
+          "label": "FORWARD trial paper",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40544428/"
+        },
+        {
+          "label": "FDA: adult Lantidra indication",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/lantidra"
+        }
+      ]
+    },
+    {
+      "id": "T1D-04",
+      "status": "open",
+      "title": "Find the missing follow-up",
+      "question": "Match pediatric or pediatric-onset trial publications to their registry IDs. Distinguish age at diagnosis from age at enrollment; record what the longest published follow-up does not answer.",
+      "sources": [
+        {
+          "label": "PROTECT trial registry",
+          "url": "https://clinicaltrials.gov/study/NCT03875729"
+        },
+        {
+          "label": "Confirmatory trial registry",
+          "url": "https://clinicaltrials.gov/study/NCT07088068"
+        }
+      ]
+    }
+  ]
+}

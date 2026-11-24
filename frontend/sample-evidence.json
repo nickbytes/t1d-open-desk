@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "task_id": "T1D-02",
+  "title": "PROTECT separates beta-cell preservation from clinical outcomes",
+  "population": "328 children and adolescents ages 8–17 with recently diagnosed type 1 diabetes, randomized 217 versus 111.",
+  "stage": "stage-3",
+  "outcome": "Stimulated C-peptide change at week 78; key secondary outcomes include insulin dose, HbA1c, time in range and clinically important hypoglycemia.",
+  "follow_up": "78 weeks",
+  "finding": "The authors report a higher stimulated C-peptide level at week 78 in the teplizumab group versus placebo, with a between-group difference of 0.13 pmol/mL (95% CI 0.09–0.17). The original key secondary endpoints did not differ significantly.",
+  "limitations": "C-peptide measures insulin production and does not establish insulin independence or clinical benefit. The accelerated approval indication is not evidence of a cure. The sample is source-checked, not independently expert-reviewed.",
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37861217/",
+      "locator": "Abstract, Methods and Results"
+    },
+    {
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3",
+      "locator": "Approval announcement, confirmatory trial paragraph"
+    }
+  ],
+  "claims_cure": false,
+  "public_sources_only": true,
+  "no_personal_or_health_data": true
+}

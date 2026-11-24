@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "T1D Open Desk evidence packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "title",
+    "population",
+    "stage",
+    "outcome",
+    "follow_up",
+    "finding",
+    "limitations",
+    "sources",
+    "claims_cure",
+    "public_sources_only",
+    "no_personal_or_health_data"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "task_id": {
+      "pattern": "^T1D-[0-9]{2}$",
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 140
+    },
+    "population": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 350
+    },
+    "stage": {
+      "enum": [
+        "pre-stage-1",
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "mixed",
+        "unknown"
+      ]
+    },
+    "outcome": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 450
+    },
+    "follow_up": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160
+    },
+    "finding": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1200
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1200
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "locator"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "maxLength": 350,
+            "pattern": "^https://"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 180
+          }
+        }
+      }
+    },
+    "claims_cure": {
+      "const": false
+    },
+    "public_sources_only": {
+      "const": true
+    },
+    "no_personal_or_health_data": {
+      "const": true
+    }
+  }
+}

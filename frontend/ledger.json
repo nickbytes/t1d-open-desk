@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "reviewed_external_submissions": 0,
+  "entries": [
+    {
+      "title": "A pediatric trial measured retained beta-cell function",
+      "population": "AGES 8–17 / RECENTLY DIAGNOSED / STAGE 3",
+      "finding": "In the randomized PROTECT study (328 participants), stimulated C-peptide was higher at week 78 with teplizumab than with placebo. The original analysis did not show significant differences in the key secondary endpoints, including insulin use and time in range.",
+      "limit": "C-peptide is a measure of insulin production, not insulin independence. The FDA granted accelerated approval in June 2026 to slow decline in insulin production for certain recently diagnosed children ages 8–17; clinical benefit still requires confirmation.",
+      "sources": [
+        {
+          "label": "PROTECT trial paper",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37861217/"
+        },
+        {
+          "label": "FDA approval announcement",
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3"
+        },
+        {
+          "label": "Confirmatory trial registry",
+          "url": "https://clinicaltrials.gov/study/NCT07088068"
+        }
+      ]
+    },
+    {
+      "title": "A delay in reaching clinical diagnosis",
+      "population": "MIXED AGES / AT RISK / STAGE 2",
+      "finding": "In the randomized TN-10 trial of 76 at-risk relatives, the median time to clinical diagnosis was 48.4 months with teplizumab versus 24.4 months with placebo.",
+      "limit": "A delay is not permanent prevention or a reversal after diagnosis. The ages in the original trial and the current label are not interchangeable.",
+      "sources": [
+        {
+          "label": "TN-10 trial paper",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31180194/"
+        },
+        {
+          "label": "FDA prescribing information",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761183s010lbls014lbl.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Early insulin-independence results in adults",
+      "population": "ADULTS ONLY / ESTABLISHED TYPE 1 DIABETES",
+      "finding": "In an early, small study of zimislecel, 10 of 12 full-dose participants were insulin independent at one year.",
+      "limit": "Participants received immunosuppression. The reported follow-up does not establish durability or pediatric safety and benefit.",
+      "sources": [
+        {
+          "label": "FORWARD trial paper",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40544428/"
+        }
+      ]
+    },
+    {
+      "title": "A prevention study with a neutral overall result",
+      "population": "INFANTS WITH GENETIC RISK / BEFORE DETECTED AUTOIMMUNITY",
+      "finding": "The POInT trial randomized 1,050 infants with elevated genetic risk. Oral insulin did not reduce the risk of the primary endpoint (multiple islet autoantibodies or diabetes) in the overall analysis.",
+      "limit": "This study was about genetic risk before detected autoimmunity. It does not test treatment for established type 1 diabetes, and subgroup findings do not establish a benefit.",
+      "sources": [
+        {
+          "label": "POInT trial paper",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41237794/"
+        }
+      ]
+    }
+  ]
+}

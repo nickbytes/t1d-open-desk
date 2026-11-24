@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "t1d-open-desk",
+  "main": "bundle/index.mjs",
+  "compatibility_date": "2026-11-24",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": { "OPEN_DESK_MODE": "read-only" }
+  // Launch only on verified Workers Free. Wrangler cannot pin the billing plan.
+  // No DB binding, metered services or external network calls in this default.
+}
