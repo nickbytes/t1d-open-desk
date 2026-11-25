@@ -1,19 +1,29 @@
 # Kill switch
 
-Use this when a ~$200 spend alert arrives, then stop and reassess the plan before putting the site back online.
+Use this when a $50 spend alert arrives, then stop and reassess the plan before putting the site back online.
 
-The alert is the trigger. Do not wait for a later invoice. A Cloudflare email at 80% of a spending limit (~$160) is an early warning; the $200 threshold is the stop signal.
+The $50 alerts are the trigger. Do not wait for the $100 hard cap or a later invoice. Cloudflare may also email at 80% of a product spending alert (~$40). The $100 Workers and Durable Objects limits will block new usage of those products if they are reached.
 
-## Where the alerts go
+## Current thresholds
 
-Configured notifications should go to **nick@nickbytes.com**, the Nickbytes Cloudflare account billing email.
+All of the following notify **nick@nickbytes.com**, the Nickbytes Cloudflare account billing email.
 
-These alerts are not a complete invoice cap:
+**Hard caps** (they can stop usage; they are not an exact invoice cap):
 
-- A Workers or Durable Objects **spending limit** (`usage_block`) is a product-wide hard stop for the whole account, after included usage. Reporting and blocking can lag, so recorded spend can go past $200. The Workers Paid subscription fee and other products (D1, KV, R2, Workers AI, Workers Logs, and so on) are not included.
-- A **budget alert** or product **usage alert** is email only. It does not stop traffic or charges.
+- Workers spending limit: $100 (`usage_block`). This is account-wide and can also pause other Workers on the same account, including nanocode.
+- Durable Objects spending limit: $100 (`usage_block`). Account-wide for Durable Objects.
 
-If those account-wide limits are in place, hitting them can also pause other Workers on the same account. This kill switch is narrower: it only takes T1D Open Desk offline so you can reassess without leaving this Worker serving traffic.
+Reporting and blocking can lag, so recorded spend can go past $100. The Workers Paid subscription fee and other products (D1, KV, R2, Workers AI, Workers Logs, and so on) are not included in these product limits.
+
+**Alerts** (email only; they do not stop traffic or charges):
+
+- Workers spending alert: $50
+- Durable Objects spending alert: $50
+- Account budget alert: $50 (account-wide usage-based spend)
+- Account budget alert: $200 (higher account-wide backup)
+- A Cloudflare auto-created $10 account budget alert is also enabled
+
+This kill switch is narrower than the account-wide $100 caps: it only takes T1D Open Desk offline so you can reassess without leaving this Worker serving traffic.
 
 ## Stop spend for this project
 
@@ -34,9 +44,9 @@ Do not run `--execute` unless you intend to take the site down.
 After `--execute`:
 
 - `npx --no-install cf workers list` no longer includes `t1d-open-desk`.
-- The site URL, usually `https://t1d-open-desk.<account>.workers.dev`, does not serve the homepage. A request should fail or return a Cloudflare error, not the Open Desk UI or `/api/forum` data.
+- The live URL, `https://t1d-open-desk.nickbytes.workers.dev`, does not serve the homepage. A request should fail or return a Cloudflare error, not the Open Desk UI or `/api/forum` data.
 
-The script prints these checks. Keep the live URL from the original deploy notes so you know what to request.
+The script prints these checks. You can also set `T1D_OPEN_DESK_URL` to that URL for the script's HTTP check.
 
 ## Restore
 
